@@ -23,6 +23,7 @@ pointData = gpd.read_file(r'G:\Bachelor_Degree_Thesis\DATA\DATA_Points\DATA.shp'
 point_raster_value = point_query(pointData['geometry'],r'G:\Bachelor_Degree_Thesis\DATA\PSM\tem_1985.tif',interpolate='nearest')
 #rasterstats命令,该包是本提取方法的核心，不使用ArcPy，使用本包进行提取，本包需要的依赖包环境较为复杂，请注意。
 #在此输入shp矢量点文件和栅格的文件路径
+#本代码似乎只能提取基于地理坐标系的栅格，所以请注意栅格坐标系的转换！！
 #2022.05.18,我的电脑炸了，我好痛苦，软件环境全崩溃了，这到底是什么人间疾苦，还有天理吗还有王法吗要死了真是，靠！！
 #而且A-SOUL也出事了，为什么从西藏下来后就这么倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉倒霉所有的事情都不顺利我要死了
 #这日子真的没法过了
